@@ -16,4 +16,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/metinahmeterkeles/Article-preview-component](https://github.com/metinahmeterkeles/Article-preview-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://melodious-fenglisu-551949.netlify.app/](https://melodious-fenglisu-551949.netlify.app/)
