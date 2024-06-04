@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <article class="article-card">
+      <div class="img-box">
+        <img src="./images/drawers.jpg" alt="Drawers" class="article-img" />
+      </div>
+
+      <div class="article-content">
+        <p class="article-title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </p>
+
+        <p class="article-text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <div class="article-content-footer">
+          <div class="author">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle Avatar"
+              width="40"
+              height="40"
+            />
+            <div class="author-info">
+              <p class="name">Michelle Appleton</p>
+              <p class="publish-date">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="share">
+            <button class="share-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  class="svg-icon"
+                />
+              </svg>
+            </button>
+
+            <div class="share-option active">
+              <p class="share-text">Share</p>
+              <a href="#"
+                ><img src="./images/icon-facebook.svg" alt="Facebook Icon"
+              /></a>
+              <a href="#"
+                ><img src="./images/icon-twitter.svg" alt="Twitter Icon"
+              /></a>
+              <a href="#"
+                ><img src="./images/icon-pinterest.svg" alt="Pinterest Icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script>
+      const shareOption = document.querySelector('.share-option');
+
+      document
+        .querySelector('.share-button')
+        .addEventListener('click', function () {
+          this.classList.toggle('active');
+          shareOption.classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>
